@@ -6,7 +6,7 @@ MAINTAINER cannin
 RUN apt-get -y update && apt-get -y upgrade
 
 # Install basic commands
-RUN apt-get -y install links nano curl wget fontconfig make
+RUN apt-get -y install links nano curl wget fontconfig make inkscape
 #RUN apt-get install -y \
 #    texlive-latex-base texlive-xetex latex-xcolor texlive-math-extra \
 #    texlive-latex-extra texlive-fonts-extra
