@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.2
+FROM ubuntu:14.04.5
 MAINTAINER cannin
 
 # UBUNTU
@@ -13,11 +13,12 @@ RUN apt-get -y install links nano curl wget fontconfig make inkscape
 
 # INSTALL TEXLIVE 2015
 # NOTE: https://github.com/scottkosty/install-tl-ubuntu
-RUN wget https://github.com/scottkosty/install-tl-ubuntu/raw/master/install-tl-ubuntu 
+RUN wget https://github.com/scottkosty/install-tl-ubuntu/raw/master/install-tl-ubuntu
 RUN chmod +x ./install-tl-ubuntu
 RUN ./install-tl-ubuntu
 
+# INSTALL INKSCAPE
+apt-get install -y --no-install-recommends inkscape
+
 # Necessary to get the PATH sourced
 #RUN source /etc/environment
-
-
