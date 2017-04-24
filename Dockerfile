@@ -18,7 +18,7 @@ RUN chmod +x ./install-tl-ubuntu
 RUN ./install-tl-ubuntu
 
 # INSTALL INKSCAPE
-apt-get install -y --no-install-recommends inkscape
+RUN apt-get install -y --no-install-recommends inkscape
 
 # Necessary to get the PATH sourced
 #RUN source /etc/environment
